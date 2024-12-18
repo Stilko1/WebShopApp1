@@ -29,15 +29,16 @@ namespace WebShopApp.Infrastructure.Data.Entities
 
         [Required]
         public int BrandId { get; set; }
+        public virtual Brand Brand { get; set; } = null!;
 
         [Required]
         public int CategoryId { get; set; }
 
-        [ForeignKey(nameof(CategoryId))]
-        public Category Category { get; set; } = null!;
+  
+        public virtual Category Category { get; set; } = null!;
 
-        [ForeignKey(nameof(BrandId))]
-        public Brand Brand { get; set; } = null!;
+        
+       
 
         public virtual IEnumerable<Order> Orders { get; set; } = new List<Order>();
     }

@@ -10,6 +10,7 @@ namespace WebShopApp.Infrastructure.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
+            this.Database.EnsureCreated();  
         }
 
         public DbSet<Brand> Brands { get; set; }

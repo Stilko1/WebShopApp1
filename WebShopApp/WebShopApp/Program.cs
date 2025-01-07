@@ -1,36 +1,44 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
-using WebShopApp.Data;
-using WebShopApp.Infrastrucutre.Data.Domain;
+using WebShopApp.Core.Contracts;
+using WebShopApp.Core.Services;
+using WebShopApp.Infrastructure.Data;
+using WebShopApp.Infrastructure.Data.Entities;
+using WebShopApp.Infrastructure.Data.Extensions;
 
 namespace WebShopApp
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(connectionString));
+                options.UseLazyLoadingProxies().UseSqlServer(connectionString));
             builder.Services.AddDatabaseDeveloperPageExceptionFilter();
-          
-            builder.Services.AddDefaultIdentity<ApplicationUser>(options => {
-                options.Password.RequiredLength = 5;
-                options.Password.RequireUppercase = false;
-                options.Password.RequireLowercase = false;
+
+            builder.Services.AddDefaultIdentity<ApplicationUser>(options => { 
                 options.SignIn.RequireConfirmedAccount = false;
                 options.Password.RequireDigit = false;
+                options.Password.RequireLowercase = false;
+                options.Password.RequireUppercase = false;
                 options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequiredLength = 5;
 
             })
+                .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             builder.Services.AddControllersWithViews();
 
+            builder.Services.AddScoped<ICategoryService, CategoryService>();
+            builder.Services.AddScoped<IBrandService, BrandService>();
+
             var app = builder.Build();
+            await app.PrepareDatabase();
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
@@ -57,7 +65,7 @@ namespace WebShopApp
                 pattern: "{controller=Home}/{action=Index}/{id?}");
             app.MapRazorPages();
 
-            app.Run();
+            await app.RunAsync();
         }
     }
 }

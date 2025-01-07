@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 
-using WebShopApp.Infrastrucutre.Data.Domain;
+using WebShopApp.Infrastructure.Data.Entities;
 
 namespace WebShopApp.Areas.Identity.Pages.Account
 {

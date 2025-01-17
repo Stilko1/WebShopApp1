@@ -21,9 +21,24 @@ namespace WebShopApp.Controllers
         }
 
         // GET: ProductController
-        public ActionResult Index()
+        public ActionResult Index(string searchStringCategoryName,string searchStringBrandName)
         {
-            return View();
+            List<ProductIndexVM> products = _productService.GetProducts(searchStringCategoryName, searchStringBrandName)
+                .Select(product => new ProductIndexVM
+                {
+                    Id = product.Id,
+                    ProductName = product.ProductName,
+                    BrandId = product.BrandId,
+                    BrandName = product.Brand.BrandName,
+                    CategoryId = product.CategoryId,
+                    CategoryName = product.Category.CategoryName,
+                    Picture = product.Picture,
+                    Quantity = product.Quantity,
+                    Price = product.Price,
+                    Discount = product.Discount,
+                }).ToList();
+            return View(products);  
+
         }
 
         // GET: ProductController/Details/5

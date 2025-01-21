@@ -14,7 +14,7 @@ namespace WebShopApp.Infrastrucutre.Data.Domain
         
         public DateTime OrderDate { get; set; }
         [Required]
-        public int ProducctId { get; set; }
+        public int ProductId { get; set; }
         public virtual Product Product { get; set; } = null!;
         [Required]
         public int UserId { get; set; }

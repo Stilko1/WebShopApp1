@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Student\\Documents\\Stilko VS\\WebShopApp\\WebShopApp.Infrastrucutre\\WebShopApp.Infrastrucutre.csproj": {}
+    "C:\\Users\\stili\\Documents\\StilkoVS\\WebShopApp1-main\\WebShopApp.Infrastrucutre\\WebShopApp.Infrastrucutre.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Student\\Documents\\Stilko VS\\WebShopApp\\WebShopApp.Infrastrucutre\\WebShopApp.Infrastrucutre.csproj": {
+    "C:\\Users\\stili\\Documents\\StilkoVS\\WebShopApp1-main\\WebShopApp.Infrastrucutre\\WebShopApp.Infrastrucutre.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Student\\Documents\\Stilko VS\\WebShopApp\\WebShopApp.Infrastrucutre\\WebShopApp.Infrastrucutre.csproj",
+        "projectUniqueName": "C:\\Users\\stili\\Documents\\StilkoVS\\WebShopApp1-main\\WebShopApp.Infrastrucutre\\WebShopApp.Infrastrucutre.csproj",
         "projectName": "WebShopApp.Infrastrucutre",
-        "projectPath": "C:\\Users\\Student\\Documents\\Stilko VS\\WebShopApp\\WebShopApp.Infrastrucutre\\WebShopApp.Infrastrucutre.csproj",
-        "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Student\\Documents\\Stilko VS\\WebShopApp\\WebShopApp.Infrastrucutre\\obj\\",
+        "projectPath": "C:\\Users\\stili\\Documents\\StilkoVS\\WebShopApp1-main\\WebShopApp.Infrastrucutre\\WebShopApp.Infrastrucutre.csproj",
+        "packagesPath": "C:\\Users\\stili\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\stili\\Documents\\StilkoVS\\WebShopApp1-main\\WebShopApp.Infrastrucutre\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Student\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\stili\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -43,7 +43,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net6.0": {
@@ -78,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

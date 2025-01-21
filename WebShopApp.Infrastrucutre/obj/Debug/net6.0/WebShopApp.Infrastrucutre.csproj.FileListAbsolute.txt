@@ -35,3 +35,15 @@ C:\Users\Student\Documents\Stilko VS\WebShopApp\WebShopApp.Infrastrucutre\obj\De
 C:\Users\Student\Documents\Stilko VS\WebShopApp\WebShopApp.Infrastrucutre\obj\Debug\net6.0\refint\WebShopApp.Infrastrucutre.dll
 C:\Users\Student\Documents\Stilko VS\WebShopApp\WebShopApp.Infrastrucutre\obj\Debug\net6.0\WebShopApp.Infrastrucutre.pdb
 C:\Users\Student\Documents\Stilko VS\WebShopApp\WebShopApp.Infrastrucutre\obj\Debug\net6.0\ref\WebShopApp.Infrastrucutre.dll
+C:\Users\stili\Documents\StilkoVS\WebShopApp1-main\WebShopApp.Infrastrucutre\bin\Debug\net6.0\WebShopApp.Infrastrucutre.deps.json
+C:\Users\stili\Documents\StilkoVS\WebShopApp1-main\WebShopApp.Infrastrucutre\bin\Debug\net6.0\WebShopApp.Infrastrucutre.dll
+C:\Users\stili\Documents\StilkoVS\WebShopApp1-main\WebShopApp.Infrastrucutre\bin\Debug\net6.0\WebShopApp.Infrastrucutre.pdb
+C:\Users\stili\Documents\StilkoVS\WebShopApp1-main\WebShopApp.Infrastrucutre\obj\Debug\net6.0\WebShopApp.Infrastrucutre.csproj.AssemblyReference.cache
+C:\Users\stili\Documents\StilkoVS\WebShopApp1-main\WebShopApp.Infrastrucutre\obj\Debug\net6.0\WebShopApp.Infrastrucutre.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\stili\Documents\StilkoVS\WebShopApp1-main\WebShopApp.Infrastrucutre\obj\Debug\net6.0\WebShopApp.Infrastrucutre.AssemblyInfoInputs.cache
+C:\Users\stili\Documents\StilkoVS\WebShopApp1-main\WebShopApp.Infrastrucutre\obj\Debug\net6.0\WebShopApp.Infrastrucutre.AssemblyInfo.cs
+C:\Users\stili\Documents\StilkoVS\WebShopApp1-main\WebShopApp.Infrastrucutre\obj\Debug\net6.0\WebShopApp.Infrastrucutre.csproj.CoreCompileInputs.cache
+C:\Users\stili\Documents\StilkoVS\WebShopApp1-main\WebShopApp.Infrastrucutre\obj\Debug\net6.0\WebShopApp.Infrastrucutre.dll
+C:\Users\stili\Documents\StilkoVS\WebShopApp1-main\WebShopApp.Infrastrucutre\obj\Debug\net6.0\refint\WebShopApp.Infrastrucutre.dll
+C:\Users\stili\Documents\StilkoVS\WebShopApp1-main\WebShopApp.Infrastrucutre\obj\Debug\net6.0\WebShopApp.Infrastrucutre.pdb
+C:\Users\stili\Documents\StilkoVS\WebShopApp1-main\WebShopApp.Infrastrucutre\obj\Debug\net6.0\ref\WebShopApp.Infrastrucutre.dll

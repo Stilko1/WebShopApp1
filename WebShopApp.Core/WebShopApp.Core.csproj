@@ -10,6 +10,7 @@
 		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.35" />
 		<PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.35" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.35" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="6.0.24" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.35" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.35">
 			<PrivateAssets>all</PrivateAssets>
@@ -18,6 +19,6 @@
 		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.18" />
 	</ItemGroup>
 	<ItemGroup>
-	  <ProjectReference Include="..\WebShopApp.Infrastrucutre\WebShopApp.Infrastrucutre.csproj" />
+	  <ProjectReference Include="..\WebShopApp.Infrastrucutre\WebShopApp.Infrastructure.csproj" />
 	</ItemGroup>
 </Project>

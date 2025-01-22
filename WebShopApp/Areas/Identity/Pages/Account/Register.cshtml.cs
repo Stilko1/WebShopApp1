@@ -119,7 +119,7 @@ namespace WebShopApp.Areas.Identity.Pages.Account
                     Email = Input.Email,
                     FirstName= Input.FirstName,
                     LastName= Input.LastName,
-                    Adress=Input.Adress,
+                    Address=Input.Adress,
                 };
 
               

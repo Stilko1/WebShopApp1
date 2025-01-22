@@ -52,12 +52,14 @@ namespace WebShopApp.Core.Services
 
         public List<Order> GetOrders()
         {
-            throw new NotImplementedException();
+            return this._context.Orders.OrderByDescending(x => x.OrderDate).ToList();
         }
 
         public List<Order> GetOrdersByUser(string userId)
         {
-            throw new NotImplementedException();
+            return this._context.Orders
+                .Where(x => x.UserId == userId).
+                OrderByDescending(X =>X.OrderDate).ToList();
         }
 
         public bool RemoveById(int orderId)

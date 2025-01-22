@@ -100,7 +100,7 @@ namespace WebShopApp.Infrastrucutre.Infrastructure
                 user.LastName = "Adminov";
                 user.UserName = "ADMIN";
                 user.Email = "admin@adminski.com";
-                user.Adress = "admin address";
+                user.Address = "admin address";
                 user.PhoneNumber = "0888888888";
 
                 var result = await userManager.CreateAsync(user, "Admin123456");

@@ -27,16 +27,13 @@ namespace WebShopApp.Core.Services
             }
 
 
-            Order item = new Order
-            {
-                OrderDate = DateTime.Now,
-                ProductId = productId,
-                UserId = userId,
-                Quantity = quantity,     
-                Price = product.Price,
-                Discount = product.Discount,
-                
-            };
+            Order item = new Order(DateTime.Now,
+                productId,
+                userId,
+                product.Price,
+                quantity,
+                product.Discount
+                );
             product.Quantity -= quantity;
             this._context.Products.Update(product);
             this._context.Orders.Add(item);

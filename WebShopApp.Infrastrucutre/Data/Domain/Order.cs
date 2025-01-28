@@ -4,11 +4,36 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Schema;
 
 namespace WebShopApp.Infrastrucutre.Data.Domain
 {
     public class Order
     {
+        public Order() { }
+
+        private  decimal GetTotalPrice()
+        {
+            return Quantity * (Price - Price * Discount / 100);
+        }
+
+        public Order(DateTime orderdate,
+            int productId,
+            string userId,
+            decimal price,
+            int quantity,
+            decimal discount)
+        {
+            OrderDate = orderdate;
+            ProductId = productId;
+            UserId = userId;
+            Price = price;
+            Quantity = quantity;
+            Discount = discount;
+            TotalPrice = GetTotalPrice();
+        }
+
+
         public int Id { get; set; }
         [Required]
         
@@ -22,7 +47,7 @@ namespace WebShopApp.Infrastrucutre.Data.Domain
         public int Quantity { get; set; }
         public decimal Price { get; set; }
         public decimal Discount { get; set; }
-        public decimal TotalPrice { get { return this.Quantity * this.Price - this.Quantity * this.Price * this.Discount / 100; } }
+        public decimal TotalPrice { get; private set; }
 
     }
 }

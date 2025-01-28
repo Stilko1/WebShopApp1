@@ -9,25 +9,25 @@ using WebShopApp.Infrastrucutre.Data.Domain;
 
 namespace WebShopApp.Core.Services
 {
-    public class StatisticsService : IStatisticsService
+    public class StatisticService : IStatisticService
     {
         private readonly ApplicationDbContext _context;
-        public StatisticsService(ApplicationDbContext context)
+        public StatisticService(ApplicationDbContext context)
         {
             _context = context;
         }
         public int CountClients()
         {
-            return _context.Users.Count();
+            return _context.Users.Count()-1;
 
-        }
-        public int CountProducts()
-        {
-            return _context.Products.Count();
         }
         public int CountOrders()
         {
             return _context.Orders.Count();
+        }
+        public int CountProducts()
+        {
+            return _context.Products.Count();
         }
         public decimal SumOrders()
         {

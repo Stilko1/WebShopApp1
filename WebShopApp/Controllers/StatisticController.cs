@@ -5,24 +5,25 @@ using WebShopApp.Models.Statistics;
 
 namespace WebShopApp.Controllers
 {
-    public class StatisticsController : Controller
+    public class StatisticController : Controller
     {
-        private readonly IStatisticsService _statisticsService;
-        public StatisticsController(IStatisticsService statisticsService)
+        private readonly IStatisticService _statisticService;
+        public StatisticController(IStatisticService statisticService)
         {
-            _statisticsService = statisticsService;
+            _statisticService = statisticService;
         }
         // GET: StatisticsController
-        public ActionResult Index()
+        public IActionResult Index()
         {
             StatisticVM statistics = new StatisticVM();
 
-            statistics.CountClients = _statisticsService.CountClients();
-            statistics.CountProducts = _statisticsService.CountProducts();
-            statistics.CountOrders = _statisticsService.CountOrders();
-            statistics.SumOrders = _statisticsService.SumOrders();
+            statistics.CountClients = _statisticService.CountClients();
+            statistics.CountProducts = _statisticService.CountProducts();
+            statistics.CountOrders = _statisticService.CountOrders();
+            statistics.SumOrders = _statisticService.SumOrders();
             return View(statistics);
         }
+
 
 
 

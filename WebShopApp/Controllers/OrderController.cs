@@ -36,7 +36,8 @@ namespace WebShopApp.Controllers
                      Price = x.Price,
                      Discount = x.Discount,
                      Picture = x.Product.Picture,
-                     User = x.User.UserName
+                     User = x.User.UserName,
+                     TotalPrice = x.TotalPrice
                  }).ToList();
             return View(orders);
 
